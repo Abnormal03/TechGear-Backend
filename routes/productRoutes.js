@@ -3,6 +3,7 @@ const {
   addProduct,
   getProducts,
   deleteProduct,
+  updateProduct,
   getMyProducts,
 } = require("../controllers/productController");
 
@@ -14,10 +15,13 @@ router.get("/", getProducts);
 //add a product...
 router.post("/product/add", addProduct);
 
-router.delete("/product/delete", deleteProduct);
+router.delete("/product/delete/:id", deleteProduct);
 
 //get users products...
 router.get("/products/myproducts", getMyProducts);
+
+//update a user product...
+router.put("/products/myproducts/:id", updateProduct);
 
 //delete a specific product...
 router.delete("/product/:id", () => {});

@@ -40,10 +40,12 @@ productSchema.statics.addProduct = async function (
   category,
   image,
 ) {
-  console.log(userId);
   if (!name || !category || !image || !price)
     throw Error("required fields are not properly filled.");
 
+  if (price <= 0) {
+    throw Error("invalid price!");
+  }
   if (!description) description = "";
   const product = await this.create({
     userId,
