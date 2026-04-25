@@ -26,7 +26,7 @@ Code snippet
 PORT=5000
 DATABASE_URL=your_database_connection_string
 JWT_SECRET=your_super_secret_key
-Run the server:
+Run the server: npm start
 
 Bash
 npm start
@@ -35,6 +35,6 @@ Runtime: Node.js
 
 Framework: Express.js
 
-Database: [Insert Database, e.g., PostgreSQL with Prisma ORM]
+Database: MongoDb Atlas
 
 Auth: JSON Web Tokens (JWT) & bcrypt
