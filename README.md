@@ -13,7 +13,7 @@ Installation
 Clone the repository:
 
 Bash
-git clone https://github.com/yourusername/techgear-backend.git
+git clone [https://github.com/yourusername/techgear-backend.git](https://github.com/Abnormal03/TechGear-Backend.git)
 cd techgear-backend
 Install dependencies:
 
